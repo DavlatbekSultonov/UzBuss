@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{css/style.css}">
+    <title>Avtobus</title>
+</head>
+<body>
+<div class="rasm-img">
+<nav>
+    <div class="nav-content">
+        <a href="/"><h1>BussAvto</h1></a>
+        <ul>
+            <li>
+                <a href="/sign-in" sec:authorize="isAnonymous()">Sign in</a>
+            </li>
+            <li>
+                <a href="/sign-up" sec:authorize="isAnonymous()">Sign up</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <h1>Toshkent -> Sirdaryo </h1>
+    <h1>Toshkent -> Jizzax </h1>
+    <h1>Toshkent -> Samarqand </h1>
+    <h1>Toshkent -> Qarshi </h1>
+    <h1>Toshkent -> Novoiy </h1>
+    <h1>Toshkent -> Buxoro </h1>
+    <h1>Toshkent -> Xorazim </h1>
+    <h1>Toshkent -> Xorazim </h1>
+    <h1>Toshkent -> Farg'ona </h1>
+    <h1>Toshkent -> Namangan </h1>
+    <h1>Toshkent -> Andijon </h1>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ma'lumot Kiritish</title>
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    input {
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+
+
+<div class="container">
+    <h1>Ma'lumot Kiritish</h1>
+    <form th:action="@{/xarid/ticket}" th:method="Post">
+        <label for="clientName">Ismingiz:</label>
+        <input type="text" id="clientName" name="clientName" required>
+
+        <label for="phoneNumber">Telefon raqamingiz:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{9}" placeholder="1234567890" required>
+
+        <body>
+        <h>Bilet Narxi</h>
+        <p><span th:text="${price}">so'm</span></p>
+        </body>
+<!--        <label for="price">Summa:</label>-->
+        <input type="number" id="price" name="price" required>
+
+
+
+        <label for="seatNumber">Joy raqami:</label>
+        <input type="number" id="seatNumber" name="seatNumber" require >
+
+        <label for="departureDate">Ketish kuni</label>
+        <input type="text" id="departureDate" name="departureDate" required>
+
+        <label for="cardNumber">Karta raqami:</label>
+        <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" placeholder="1234567890" required>
+
+        <label for="cardDate">Karta amal qilish muddati:</label>
+        <input type="text" id="cardDate" name="cardDate" placeholder="MM/YY" required>
+        <a th:href="@{/xarid/ticket}"><button type="submit">Jo'natish</button></a>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Buss</title>
+</head>
+<body>
+<h2>Update Buss2</h2>
+<form th:action="@{'/buss/updateBussId/' + ${bussUpdate.id}}" th:method="POST">
+    <br><br>
+    <label>
+            <input type="text" name="name" th:value="${bussUpdate.name}"/>
+    </label>
+    <br><br>
+    <label>
+        <input type="text" name="number" th:value="${bussUpdate.number}"/>
+    </label>
+    <br><br>
+    <label>
+        <input type="text" name="placesNumber" th:value="${bussUpdate.placesNumber}"/>
+    </label>
+    <br><br>
+    <label>
+        <input type="text" name="startAddress" th:value="${bussUpdate.startAddress}"/>
+    </label>
+    <br><br>
+    <label>
+        <input type="text" name="endAddress" th:value="${bussUpdate.endAddress}"/>
+    </label>
+    <br><br>
+    <label>
+        <input type="text" name="walkTime" th:value="${bussUpdate.walkTime}"/>
+    </label>
+    <br><br>
+    <label>
+        <input type="text" name="price" th:value="${bussUpdate.price}"/>
+    </label>
+    <br><br>
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>

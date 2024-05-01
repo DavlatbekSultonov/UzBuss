@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>course</title>
+</head>
+<body>
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .container {
+        margin-top: 5rem;
+    }
+
+    .table {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .table th, .table td {
+        text-align: center;
+    }
+
+    .table th {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .table tr:hover {
+        background-color: #6c757d;
+    }
+
+    /* Barcha qatorlarga ramka qo'yish */
+    .table tr {
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    /* Birinchi va oxirgi qatorlarga burchak qo'yish */
+    .table tr:first-child {
+        border-top: 2px solid #343a40;
+    }
+
+    .table tr:last-child {
+        border-bottom: 2px solid #343a40;
+    }
+</style>
+<h1 class="mt-5 mb-5 text-center">Ticket</h1>
+<table class="table table-dark table-hover table-bordered">
+    <tr class="text-center">
+        <th>id</th>
+        <th>clientName</th>
+        <th>departureDate</th>
+        <th>seatNumber</th>
+        <th>price</th>
+    </tr>
+    <tr th:each="buss : ${ticketList}">
+        <td th:text="${bussStat.count}">ID</td>
+        <td th:text="${buss.getClientName()}">Name</td>
+        <td th:text="${buss.getDepartureDate()}">departure Date</td>
+        <td th:text="${buss.getSeatNumber()}">seat</td>
+        <td th:text="${buss.getPrice()}">price</td>
+        <!--        <td><a class="btn btn-outline-danger" th:href="@{'/admin/deleteCourse/' + ${course.id}}">Delete</a></td>-->
+        <!--        <td><a class="btn btn-outline-danger" th:href="@{'/admin/updateCourse/' + ${course.id}}">Update</a></td>-->
+    </tr>
+
+</table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

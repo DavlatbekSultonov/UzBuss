@@ -1,0 +1,145 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+.rasm-img{
+    background-image: url('../img/img_9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+
+}
+
+.nav-content{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #1c1b1b;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+.nav-content ul{
+    display: flex;
+}
+
+.nav-content ul li{
+    margin: 0 5px;
+}
+
+.nav-content a:hover{
+    color: aqua;
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.search-form label, form{
+    margin: 10px 50px;
+}
+
+.car-cards{
+    display: flex;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.car-card{
+    padding: -1px 20px;
+    margin: 20px 15px;
+    border: 1px solid black;
+    width: 200px;
+    height: 243px;
+    background-color: aqua;
+}
+
+.car-card h1{
+    text-align: center;
+}
+h1 {
+    font-family: 'Arial', Georgia; /* Schriftart (font-family) */
+    font-size: 24px; /* Schriftgröße (font-size) */
+    color: #ffffff; /* Schriftfarbe (color) */
+    margin-bottom: 10px; /* Unten Margin (margin-bottom) */
+    border-bottom: 2px solid #ccc; /* Border (oben) */
+    padding-bottom: 5px; /* Unten Padding (padding-bottom) */
+}
+
+/* Har bir h1 tegi uchun alohida stil qo'yish */
+h1:nth-child(1) {
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+h1:nth-child(2){
+   /*background-color: #e0e0e0; !* Fons rangi (background-color) *!*/
+    color: #2f0000;
+}
+/*h1:nth-child(2) {*/
+/*    background-color: #e0e0e0; !* Fons rangi (background-color) *!*/
+/*    color: #00ff00; !* Schriftfarbe (color) *!*/
+/*}*/
+
+h1:nth-child(3) {
+    /*background-color: #d0d0d0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+
+h1:nth-child(4) {
+    /*background-color: #c0c0c0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+h1:nth-child(5) {
+    /*background-color: #f0f0f0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+
+h1:nth-child(6) {
+    /*background-color: #e0e0e0; !* Fons rangi (background-color) *!*/
+    color:#2f0000; /* Schriftfarbe (color) */
+}
+
+h1:nth-child(7) {
+    /*background-color: #d0d0d0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+
+h1:nth-child(8) {
+    /*background-color: #c0c0c0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+h1:nth-child(9) {
+    /*background-color: #f0f0f0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+
+h1:nth-child(10) {
+    /*background-color: #e0e0e0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+
+h1:nth-child(11) {
+    /*background-color: #d0d0d0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}
+
+h1:nth-child(12) {
+    /*background-color: #c0c0c0; !* Fons rangi (background-color) *!*/
+    color: #2f0000; /* Schriftfarbe (color) */
+}

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rasm-cars{
+    background-image: url('../img/img_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 707px;
+}
+
+.rasm-car-create{
+    background-image: url('../img/img_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 707px;
+}
+
+.sign-in-form{
+    height: 40%;
+    width: 40%;
+    background-color: sienna;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.sign-in-form h1{
+    margin: 10px 0 35px 0;
+    color: green;
+}
+
+.sign-in-form h1:hover{
+    margin: 10px 0 35px 0;
+    color: red;
+}
+
+.sign-in-form input{
+    margin-bottom: 15px;
+    padding: 3px 15px;
+}
+
+.sign-in-form button {
+    margin-top: 40px;
+    padding: 5px 60px;
+    background-color: forestgreen;
+    color: white;
+}
